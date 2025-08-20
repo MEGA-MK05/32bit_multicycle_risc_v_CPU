@@ -2,6 +2,8 @@
 
 # 마크다운 뷰어가 없다면 이 링크를 통해 확인해주세요.
 
+https://github.com/MEGA-MK05/practice-
+
 ## 목표
 
 수업 시간에 만든 32bit cpu 내부 ram과 register file의 상호 작용을 분석한다 
