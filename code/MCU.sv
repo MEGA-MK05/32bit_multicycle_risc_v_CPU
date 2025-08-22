@@ -2,7 +2,8 @@
 
 module MCU (
     input logic clk,
-    input logic reset
+    input logic reset,
+    output logic busWe
 );
     logic [31:0] instrCode;
     logic [31:0] instrMemAddr;
@@ -19,7 +20,8 @@ module MCU (
 
     CPU_RV32I U_RV32I (.*);
 
-    RAM U_RAM (
+
+    TOP_RAM U_topram (
         .clk  (clk),
         .we   (busWe),
         .addr (busAddr),

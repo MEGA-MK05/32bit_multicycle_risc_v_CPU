@@ -218,13 +218,11 @@ module RegisterFile (
     logic [31:0] mem[0:2**5-1];
 
     
-    // initial begin  // for simulation test
-    //     for (int i = 0; i < 32; i++) begin
-    //         mem[i] = 10 + i;
-    //     end
-    //     mem[1] = {16'b0,16'b1111_1111_1111_1110};
-    //     mem[2] = { 16'b0,16'b1111_1111_1111_1101};
-    // end
+    initial begin  // for simulation test
+        for (int i = 0; i < 32; i++) begin
+            mem[i] =  i;
+        end
+    end
     
 
     always_ff @(posedge clk) begin
