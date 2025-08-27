@@ -8,6 +8,7 @@
 `define XOR  4'b0100
 `define OR   4'b0110
 `define AND  4'b0111
+`define ADDI 4'b0000
 
 `define OP_TYPE_R  7'b0110011
 `define OP_TYPE_L  7'b0000011

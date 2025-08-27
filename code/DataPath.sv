@@ -24,6 +24,8 @@ module DataPath (
     
 );  
 
+    
+
     logic [31:0] aluResult, ExeReg_aluResult; 
     logic [31:0] RFData1, RFData2, DecReg_RFData1, DecReg_RFData2,ExeReg_RFData2;
     logic [31:0] PCSrcData, PCOutData, PC_Imm_AdderSrcMuxOut;
@@ -35,6 +37,8 @@ module DataPath (
     assign instrMemAddr = PCOutData;
     assign busAddr = ExeReg_aluResult;
     assign busWData = ExeReg_RFData2;
+
+ 
 
     RegisterFile U_RegFile (
         .clk(clk),
